@@ -21,7 +21,7 @@ namespace AutoMapperTesting.Automapper.Profiles
             CreateMap<ClauseItem, XmlClauseItem>()
                 .ForMember(src=> src.KeywordInstanceId, opts=> opts.MapFrom(x=> x.Id));
             CreateMap<XmlClauseItem, ChildKeyword>();
-            //.ForMember(x => x.InnerValue, opts => opts.MapFrom(x => new InnerClauseValue() {  Value= x.Value }));
+           
         }
     }
 }
